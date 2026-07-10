@@ -53,7 +53,7 @@ static void bindit (int sock, char *name)
 static inline int run_child (int sock, int fd, unsigned int timeout)
 {
   char buf[8192] ;
-  iopause_fd x = { .fd = fd, .events = IOPAUSE_READ } ;
+  iopause_fd x = { .fd = sock, .events = IOPAUSE_READ } ;
   int found = 0 ;
   tain deadline = TAIN_INFINITE_RELATIVE ;
   tain_now_g() ;
