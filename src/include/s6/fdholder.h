@@ -17,7 +17,7 @@ struct s6_fdholder_s
 {
   unixconnection connection ;
 } ;
-#define S6_FDHOLDER_ZERO { .connection = UNIXCONNECTION_ZERO } ;
+#define S6_FDHOLDER_ZERO { .connection = UNIXCONNECTION_ZERO }
 
 
  /* Starting and ending */
