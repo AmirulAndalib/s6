@@ -75,7 +75,7 @@ static inline int run_child (int sock, int fd, unsigned int timeout)
       if (!strncmp(buf, "READY=1", 7) && (!buf[7] || buf[7] == '\n')) break ;
       else
       {
-        char *s = strstr(buf, "\nREADY=1\n") ;
+        char *s = strstr(buf, "\nREADY=1") ;
         if (s && (!s[8] || s[8] == '\n')) break ;
       }
     }
